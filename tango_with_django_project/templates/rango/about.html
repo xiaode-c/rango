@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} About {% endblock %}
+
+
+{% block body_block %}
+   <div class="page-header">
+                <h1>About</h1>
+            </div>
+            <div>
+            <p></strong>.</p>
+
+            <img height="100" src="{% static "images/python.jpg" %}" alt="Picture of Rango" /> <!-- New line -->
+            </div>
+    <!--<p>Visits: {{visits}}</p>
+    <h1>This is About Page</h1>
+    <a href="/rango">返回首页</a>
+    <img src="{% static "images/about.jpg" %}"/>-->
+{% endblock %}

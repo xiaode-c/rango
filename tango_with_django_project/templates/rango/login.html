@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rango</title>
+</head>
+<body>
+    <h1>Login in Rango</h1>
+
+    <div class="container">
+
+      <form class="form-signin" action="{% url 'login' %}" method="post", id="login_form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputName" class="sr-only">Email address</label>
+        <input type="text" name="username" class="form-control" placeholder="Email username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <!--<div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>-->
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!--<form action="{% url 'login' %}" method="post", id="login_form">
+    {% csrf_token %}
+
+    Username: <input type="text" name="username" value="" size="50" /> <br />
+    Password: <input type="password" name="password", value="" size="50" /> <br />
+
+    <input type="submit" value="登录">
+
+    </form>-->
+</body>
+</html>
